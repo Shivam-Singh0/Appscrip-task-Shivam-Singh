@@ -1,0 +1,235 @@
+/* General container styles */
+.container {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+/* Flex container should take full width and prevent wrapping */
+.content {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Prevent wrapping */
+    justify-content: space-between;
+    /* Distribute space evenly */
+    padding-top: 3rem;
+    border-bottom: 1px solid white;
+    gap: 8rem;
+    /* Adjust gap between sections */
+}
+
+/* Make subscribe take up available space */
+.subscribe {
+    flex: 1;
+    /* Take up remaining space */
+}
+
+/* Ensure the contact section also takes its fair space */
+.contact {
+    flex: 1;
+    /* Take up remaining space */
+}
+
+/* Input and button styling inside .subscribe */
+.subscribe input {
+    flex-grow: 1;
+    /* Ensure input takes remaining width */
+    min-width: 0;
+    /* Allow input to shrink properly */
+    height: 47px;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    /* Small space between input and button */
+}
+
+.subscribe button {
+
+    height: 47px;
+    padding: 0 1rem;
+    white-space: nowrap;
+    /* Prevent button text from wrapping */
+
+    gap: 0px;
+    border-radius: 5px;
+    border: 1.14px solid #E5E5E5;
+    opacity: 30%;
+    background-color: black;
+    color: white;
+}
+
+/* Text and headings styling */
+.container h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+}
+
+.para {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    margin: 1rem 0 1rem 0;
+}
+
+/* List styling */
+.list {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 1rem;
+}
+
+.list h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.list p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* Flag styling for currency */
+.flag {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.flag span {
+    font-size: 16px;
+}
+
+.flag img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.flag .diamond {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: rgb(255, 255, 255);
+    /* Adjust color as needed */
+    margin-right: 8px;
+    transform: rotate(45deg);
+    /* Makes the square look like a diamond */
+}
+
+/* Grid container styling for footer links */
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 3rem;
+}
+
+/* Copyright styling */
+.copyright {
+    font-family: Simplon Norm;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.paramobile {
+    display: none;
+}
+
+.mobcontact {
+    display: none;
+}
+
+.paymentsconatiner {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    /* Stack sections vertically on smaller screens */
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 2rem;
+        /* Reduced gap between sections */
+
+    }
+
+    /* Adjust grid to a single column */
+    .grid_container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Make .subscribe and .contact sections full-width on smaller screens */
+    .subscribe,
+    .contact {
+        flex: 1 1 100%;
+    }
+
+    /* Make the flag and payment images more compact on mobile */
+    .flag img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Ensure that buttons and inputs adjust size on smaller screens */
+    .subscribe input,
+    .subscribe button {
+        width: 100%;
+        /* Allow input and button to take full width */
+    }
+
+    .container h3 {
+        font-size: 16px;
+    }
+
+    .para {
+        display: none;
+    }
+
+    .paramobile {
+        display: block;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .content {
+        border-bottom: none
+    }
+
+
+    .grid_container {
+        display: none;
+    }
+
+    .paymentsconatiner{
+        display: block;
+    }
+
+}

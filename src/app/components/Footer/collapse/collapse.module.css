@@ -1,0 +1,34 @@
+.collapse {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .collapse {
+        display: block;
+        border-top: 1px solid #E5E5E5;
+        padding-top: 1.5rem;
+        
+       
+    }
+    
+    .collapse h3 {
+      
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        text-align: left;
+        margin-bottom: 1rem;
+       cursor: pointer;
+    }
+    
+    .collapseDetails{
+       display: flex;
+       align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    gap: 0.5rem;
+    
+    
+    }
+}

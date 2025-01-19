@@ -1,0 +1,51 @@
+.bannerHeading{
+   
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 72px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.bannerParagraph{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.banner{
+    width: 721px;
+
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+
+
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .bannerHeading {
+        font-size: 24px;
+        line-height: 16px;
+    }
+    .bannerParagraph {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 1.5rem;
+    }
+
+    .banner {
+        margin-bottom: 10px;
+    }
+}
