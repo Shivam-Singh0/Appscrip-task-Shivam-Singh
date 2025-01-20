@@ -1,9 +1,23 @@
-Appscrip Assignment
-tech stack :- NextJs, FakestoreApi
-## Getting Started
---clone :- git clone https://github.com/Shivam-Singh0/Appscrip-task-Shivam-Singh.git
---Install dependency :- npm install
---Run :- npm run dev
 
-Open (http://localhost:3000) with your browser to see the result.
+
+## Tech Stack
+
+    Next.js
+    Fakestore Api
+
+## Getting Started
+
+    Clone the repository:
+    https://github.com/Shivam-Singh0/Appscrip-task-Shivam-Singh.git
+
+
+  ### Install dependencies:
+     npm install
+
+
+
+  ### Start the development server:
+      npm run dev
+      The application will be accessible at http://localhost:3000.
+
 
