@@ -9,16 +9,16 @@ const myFont = localFont({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://appscrp-ecom.vercel.app/'),
   title: {
     default: "Appscrip E-Commerce", 
     template: '%s | Your Site Name'
   },
   description: "E-Commerce for Appscrip",
   openGraph: {
-    title: "Your Site Name",
+    title: "Appscrip E-Commerce",
     description: "Find your perfect products at Appscrip. We offer branded products, fast delivery, secure checkout, personalized service with a focus on quality, sustainability, affordability. Shop now and experience the difference.",
-    url: 'https://yourdomain.com', 
+    url: 'https://appscrp-ecom.vercel.app/', 
     siteName: 'Appscrip E-Commerce',
     locale: 'en_US',
     type: 'website',
@@ -42,8 +42,8 @@ export const metadata = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Appscrip",
-    "url": "https://yourdomain.com",
-    "logo": "https://yourdomain.com/logo.png",
+    "url": "https://appscrp-ecom.vercel.app/",
+    "logo": "https://appscrp-ecom.vercel.app/logo.png",
     "sameAs": [
       "https://www.facebook.com/yourpage",
       "https://twitter.com/yourprofile",
