@@ -5,20 +5,20 @@ import Footer from "./components/Footer/Footer";
 
 const myFont = localFont({
   src: "../../public/fonts/SimplonNorm.woff2",
-  display: 'swap' 
+  display: 'swap'
 });
 
 export const metadata = {
   metadataBase: new URL('https://appscrp-ecom.vercel.app/'),
   title: {
-    default: "Appscrip E-Commerce", 
+    default: "Appscrip E-Commerce",
     template: '%s | Your Site Name'
   },
-  description: "E-Commerce for Appscrip",
+  description: "E-Commerce for Appscrip default description, it can be replaced in specific pages",
   openGraph: {
     title: "Appscrip E-Commerce",
     description: "Find your perfect products at Appscrip. We offer branded products, fast delivery, secure checkout, personalized service with a focus on quality, sustainability, affordability. Shop now and experience the difference.",
-    url: 'https://appscrp-ecom.vercel.app/', 
+    url: 'https://appscrp-ecom.vercel.app/',
     siteName: 'Appscrip E-Commerce',
     locale: 'en_US',
     type: 'website',
@@ -37,8 +37,7 @@ export const metadata = {
   icons: {
     icon: '/favicon.ico',
   },
-  // Adding Schema.org JSON-LD for SEO
-  structuredData: {
+    structuredData: {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Appscrip",
@@ -57,23 +56,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content={metadata.description} />
-        <meta name="robots" content="index, follow" />
-        <meta name="googlebot" content="index, follow" />
-        <meta name="googlebot-news" content="index, follow" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-        <title>{metadata.title.default}</title>
-
-        {/* Open Graph Meta Tags */}
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:url" content={metadata.openGraph.url} />
-        <meta property="og:site_name" content={metadata.openGraph.siteName} />
-        <meta property="og:locale" content={metadata.openGraph.locale} />
-        <meta property="og:type" content={metadata.openGraph.type} />
-
-        {/* JSON-LD Schema for SEO */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+       {/* JSON-LD Schema for SEO */}
         <script type="application/ld+json">
           {JSON.stringify(metadata.structuredData)}
         </script>
