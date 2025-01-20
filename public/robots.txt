@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://appscrp-ecom.vercel.app/sitemap.xml
